@@ -21,8 +21,8 @@ body {
 }
 
 main {
-    width: 330px;
-    min-height: 280px;
+    width: 20.5rem;
+    min-height: 32.4rem;
     box-shadow: 10px 10px 13px 9px rgba(234, 237, 244, 0.75);
     -webkit-box-shadow: 10px 10px 13px 9px rgba(234, 237, 244, 0.75);
     -moz-box-shadow: 10px 10px 13px 9px rgba(234, 237, 244, 0.75);
@@ -32,29 +32,37 @@ main {
     border-radius: 0.5rem;
 }
 
+header {
+    height: 12.5rem;
+}
+
 header img {
+    height: 100%;
     width:100%;
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
+section {
+    margin-bottom: 15px;
+}
 
 section, footer {
-    padding: 10px 30px;
+    padding: 0px 32px;
 }
 
-section h1, section h2 {
-    margin: 20px 0;
-}
-
-h1 {
-    font-size: 1.2rem;
+section h1 {
+    margin-top: 37px;
+    font-size: 1rem;
+    word-spacing: 1px;
     font-weight: 700;
     color: var(--VeryDarkGrayishBlue);
 }
 
-h2 {
-    font-size: 0.9rem;
+section h2 {
+    margin-top: 17px;
+    font-size: 0.84rem;
     font-weight: 500;
+    line-height: 1.55;
     color: var(--GrayishBlue);
 }
 
@@ -63,8 +71,8 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
+    padding-top: 20px
 }
 
 footer img , footer button{
@@ -79,7 +87,7 @@ footer img , footer button{
 }
 
 .author img {
-    margin-right: 20px;
+    margin-right: 18px;
 }
 
 .author-text {
@@ -88,13 +96,19 @@ footer img , footer button{
 
 
 footer h1, footer h2 {
-    font-size: 0.9rem;
+
     flex-direction: column;
     font-weight: 500;
 }
 
 footer h1 {
+    font-size: 0.81rem;
     font-weight: 700;
+}
+
+footer h2 {
+    margin-top: 3px;
+    font-size: 0.82rem;
 }
 
 footer button {
@@ -121,6 +135,7 @@ footer button i {
     width: 100%;
     padding: 10px;
     border-radius: 0 0 0.5rem 0.5rem;
+    box-sizing: border-box;
 }
 
 .share-links img, .share-links p {
@@ -140,12 +155,14 @@ footer button i {
 
 @media only screen and (min-width: 600px) {
     main {
-        width: 730px;
+        min-height: 17.7rem;
+        width: 45.7rem;
         flex-direction: row;
     }
 
     header {
-        width: 35%;
+        height: auto;
+        width: 41.5%;
     }
 
     header img {
@@ -158,6 +175,25 @@ footer button i {
         width: 65%;
     }
 
+    section, footer {
+        padding: 0px 40px;
+    }
+
+    
+    section h1 {
+        font-size: 1.28rem;
+        font-weight: 700;
+        color: var(--VeryDarkGrayishBlue);
+        margin:33px 0 13px 0;
+    }
+    
+    section h2 {
+        font-size: 0.83rem;
+        margin-top:0;
+        font-weight: 500;
+        color: var(--GrayishBlue);
+    }
+
     .share-links {
         border-radius: 0.5rem;
         position: absolute;
@@ -166,7 +202,7 @@ footer button i {
         width: 248px;
         justify-content: center;
         align-items: center;
-        left: 63.5%;
+        left: 58.6%;
         top: -70px;
         display: none;
     }
@@ -181,6 +217,16 @@ footer button i {
         height: 15px;
         background: #47566b;
     }
+
+
+    footer {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 }
 
 .share-link-show {
@@ -190,4 +236,16 @@ footer button i {
 .share-link-show-btn {
     background-color: var(--GrayishBlue);
     color: white;
+}
+
+
+.attribution {
+width: 100%;
+text-align: center;
+margin-top: 1em;
+padding: 1rem 0;
+position: absolute;
+bottom: 0;
+font-size: .8rem;
+background: white;
 }
